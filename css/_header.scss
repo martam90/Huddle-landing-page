@@ -1,0 +1,25 @@
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: $spacing * 2.5;
+
+    .cta {
+        @include cta;
+        place-self: end;
+        width: 8em;
+        padding: $spacing - 0.5 0;
+        box-shadow: 2px 2px 5px 3px rgb(247, 213, 235);
+
+        &.cta--header {
+            color: $pink;
+            border: 1px solid $pink;
+            background-color: #fff;
+        }
+
+        &:hover {
+            color: $light-pink;
+            border: 1px solid $light-pink;
+            transition: $transition;
+        }
+    }
+}

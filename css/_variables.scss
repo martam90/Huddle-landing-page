@@ -1,0 +1,36 @@
+$font-size: 1rem;
+$font-body: 'Open Sans', sans-serif;
+$font-heading: 'Poppins', sans-serif;
+
+$spacing: 1.25em;
+
+/* colors */
+$pink: hsl(322, 100%, 66%);
+$light-pink: hsl(321, 100%, 78%);
+$light-red: hsl(0, 100%, 63%);
+
+$dark-cyan: hsl(192, 100%, 9%);
+$pale-blue: hsl(207, 100%, 98%);
+
+$light-cyan: #7C8992;
+
+$transition: all ease-in-out 300ms;
+
+@mixin cta {
+    outline: none;
+    border-radius: 1.25em;
+    font-size: $font-size;
+    transition: $transition;
+    cursor: pointer;
+
+    &:focus {
+        outline: 2px dotted $dark-cyan;
+    }
+}
+
+@mixin image {
+    @include image;
+}
+
+
+

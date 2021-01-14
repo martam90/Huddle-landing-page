@@ -1,0 +1,70 @@
+.hero {
+    padding: $spacing * 2.5;
+
+    .hero__content {
+        text-align: center;
+
+        .hero__title {
+            margin: 0;
+        }
+    
+        .hero__text {
+            margin: 0;
+            padding: $spacing 0;
+    
+            &.text--cyan {
+                color: $dark-cyan;
+                line-height: 1.8;
+            }
+
+            &.text--fade {
+                color: $light-cyan;
+            }
+        }
+
+        .cta {
+            @include cta;
+            
+            border: none;
+            padding: $spacing $spacing + 0.8;
+            box-shadow: 2px 2px 5px 3px rgba(182, 182, 182, 0.5);
+    
+            &.cta--action {
+                background-color: $pink;
+                color: $pale-blue;
+                font-weight: 700;
+            }
+    
+            &:hover {
+                background-color: $light-pink;
+            }
+        }
+    }
+
+    .hero__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: $spacing * 4 0;
+    }
+
+    .hero__details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: $spacing * 4 0;
+
+        .hero__icon {
+            display: flex;
+        }
+
+        .hero__title {
+            text-align: center;
+
+            &.title--large-number {
+                font-size: $font-size * 5;
+            }
+        }
+    }
+}
