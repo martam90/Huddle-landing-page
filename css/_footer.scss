@@ -1,0 +1,135 @@
+footer {
+  position: relative;
+  background-color: $dark-cyan;
+  padding: $spacing * 2.5;
+  padding-bottom: 0;
+  margin-top: 53px;
+
+  &::before {
+    @include bg-pattern-top;
+    height: 53px;
+    background-image: url("../images/bg-footer-top-mobile.svg");
+  }
+
+  .footer {
+    &.footer--top {
+      display: block;
+
+      .footer__title {
+        &.title--uppercase {
+          text-transform: uppercase;
+          font-weight: 600;
+          color: $pale-blue;
+          font-size: $font-size * 1.5;
+        }
+      }
+
+      .text--white {
+        color: $pale-blue;
+        font-weight: 600;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .input__group {
+          width: 100%;
+        }
+      }
+
+      .footer__input {
+        width: 100%;
+        padding: $spacing;
+        border-radius: 0.7em;
+        border: none;
+        margin: $spacing - 0.5 0;
+
+        &.active {
+          border: 1px solid $light-red;
+        }
+      }
+
+      .email-error {
+        display: none;
+
+        &.active {
+          padding: 0;
+          display: block;
+          color: $light-red;
+        }
+      }
+
+      .cta {
+        @include cta;
+
+        &.cta--form {
+          @include cta-form;
+        }
+      }
+    }
+
+    &.footer--bottom {
+      padding-top: $spacing * 4;
+
+      .footer__logo {
+          fill: $pale-blue;
+      }
+
+      .text--white {
+        color: $pale-blue;
+      }
+
+      .footer__contact {
+        padding: $spacing * 1.5 0;
+
+        .contact__img {
+          margin-right: $spacing;
+        }
+
+        .footer__link {
+          text-decoration: none;
+
+          &.link--white {
+            color: $pale-blue;
+          }
+        }
+      }
+
+      .footer__icons {
+        display: flex;
+        gap: $spacing;
+        padding: $spacing * 1.5 0;
+
+        .fab {
+          font-size: $font-size + 0.8;
+        }
+
+        .footer__icon {
+          color: $pale-blue;
+          transition: $transition;
+
+          &:hover {
+            color: $cyan;
+            transition: $transition;
+          }
+
+          &:focus {
+            outline: 2px dotted $pale-blue;
+          }
+        }
+      }
+    }
+  }
+
+  .attribution {
+    text-align: center;
+    color: $pale-blue;
+    font-size: $font-size - 0.3;
+
+    a {
+      color: $light-red;
+    }
+  }
+}
