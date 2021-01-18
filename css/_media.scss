@@ -1,0 +1,122 @@
+@media screen and (min-width: 768px) {
+  /* hero */
+  .hero__text {
+    margin: 0 auto;
+    max-width: 50em;
+  }
+
+  .hero__content--desktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* main */
+
+  main {
+    .grow {
+      @include desktop-grid;
+      margin-top: 165px;
+      margin-bottom: 139px;
+
+      &::before {
+        @include bg-pattern-top;
+        height: 165px;
+        background-image: url("../images/bg-section-top-desktop-1.svg");
+      }
+
+      &:after {
+        @include bg-pattern-bottom;
+        height: 139px;
+        background-image: url("../images/bg-section-bottom-desktop-1.svg");
+      }
+
+      .grow__image {
+        grid-column: 2 / 3;
+      }
+
+      .grow__content {
+        @include desktop-content-left;
+      }
+    }
+  }
+
+  .conversations {
+    @include desktop-grid;
+
+    .conversations__image {
+      grid-column: 1 / 2;
+    }
+
+    .conversations__content {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      place-self: center;
+      text-align: right;
+    }
+  }
+
+  .users {
+    @include desktop-grid;
+    margin-top: 156px;
+    margin-bottom: 139px;
+
+    &::before {
+      @include bg-pattern-top;
+      height: 156px;
+      background-image: url("../images/bg-section-top-desktop-2.svg");
+    }
+
+    &:after {
+      @include bg-pattern-bottom;
+      height: 139px;
+      background-image: url("../images/bg-section-bottom-desktop-2.svg");
+    }
+
+    .users__image {
+      grid-column: 2 / 3;
+    }
+
+    .users__content {
+      @include desktop-content-left;
+    }
+  }
+
+  /* footer */
+  footer {
+    @include desktop-grid;
+    gap: $spacing * 3;
+    margin-top: 158px;
+
+    &::before {
+      @include bg-pattern-top;
+      height: 158px;
+      background-image: url("../images/bg-footer-top-desktop.svg");
+    }
+
+    .footer {
+      &.footer--top {
+        form {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: $spacing * 1.5;
+        }
+
+        .footer__input {
+          margin: 0;
+        }
+      }
+
+      &.footer--bottom {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        padding: 0;
+      }
+    }
+
+    .attribution {
+      text-align: left;
+    }
+  }
+}

@@ -1,78 +1,78 @@
 main {
-    text-align: center;
+  text-align: center;
 
-    & > section {
-        padding: $spacing * 5 $spacing * 3;
+  & > section {
+    padding: $spacing * 5 $spacing * 3;
+  }
+
+  .title--medium {
+    font-size: clamp(1rem, 4vw, 1.8rem);
+  }
+
+  .grow {
+    background-color: $light-blue;
+    position: relative;
+    margin-top: 112px;
+    margin-bottom: 52px;
+
+    &::before {
+      @include bg-pattern-top;
+      height: 112px;
+      background-image: url("../images/bg-section-top-mobile-1.svg");
     }
 
-    .grow {
-        background-color: $light-blue;
-        position: relative;
-        margin-top: 112px;
-        margin-bottom: 52px;
-
-        &::before {
-            @include bg-pattern-top;
-            height: 112px;
-            background-image: url("../images/bg-section-top-mobile-1.svg");
-        }
-
-        &::after {
-            @include bg-pattern-bottom;
-            height: 52px;
-            background-image: url("../images/bg-section-bottom-mobile-1.svg");
-        }
-
-        .grow__image {
-            @include image;
-        }
+    &::after {
+      @include bg-pattern-bottom;
+      height: 52px;
+      background-image: url("../images/bg-section-bottom-mobile-1.svg");
     }
 
-    .users {
-        background-color: $light-blue;
-        position: relative;
-        margin-top: 103px;
-        margin-bottom: 101px;
+    .grow__image {
+      @include image;
+    }
+  }
 
-        &::before {
-            @include bg-pattern-top;
-            height: 103px;
-            background-image: url("../images/bg-section-top-mobile-2.svg");
-        }
+  .users {
+    background-color: $light-blue;
+    position: relative;
+    margin-top: 103px;
+    margin-bottom: 101px;
 
-        &::after {
-            @include bg-pattern-bottom;
-            height: 101px;
-            background-image: url("../images/bg-section-bottom-mobile-2.svg");
-        }
-
-        .users__image {
-            @include image;
-        }
+    &::before {
+      @include bg-pattern-top;
+      height: 103px;
+      background-image: url("../images/bg-section-top-mobile-2.svg");
     }
 
-    .conversations {
-
-        .conversations__image {
-            @include image;
-        }
+    &::after {
+      @include bg-pattern-bottom;
+      height: 101px;
+      background-image: url("../images/bg-section-bottom-mobile-2.svg");
     }
 
-    .community {
-
-        .community__title {
-            font-size: $font-size * 2;
-            padding: $spacing 0;
-        }
-
-        .cta {
-            @include cta;
-        
-            &.cta--action {
-                @include cta-action;
-            }
-        }
+    .users__image {
+      @include image;
     }
+  }
+
+  .conversations {
+    .conversations__image {
+      @include image;
+    }
+  }
+
+  .community {
+    .community__title {
+      font-size: $font-size * 2;
+      padding: $spacing 0;
+    }
+
+    .cta {
+      @include cta;
+
+      &.cta--action {
+        @include cta-action;
+      }
+    }
+  }
 }
-
-

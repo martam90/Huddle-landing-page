@@ -1,29 +1,29 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: $spacing * 1.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: $spacing * 2;
 
-    @include xs;
+  @include xs;
 
-    .cta {
-        @include cta;
-        width: 8em;
-        padding: $spacing - 0.5 0;
-        box-shadow: 2px 2px 5px 3px rgb(247, 213, 235);
+  .cta {
+    @include cta;
+    width: 8em;
+    padding: $spacing - 0.5 0;
+    box-shadow: 2px 2px 5px 3px rgb(247, 213, 235);
 
-        &.cta--header {
-            color: $pink;
-            border: 1px solid $pink;
-            border-radius: 1em;
-            background-color: #fff;
+    &.cta--header {
+      color: $pink;
+      border: 1px solid $pink;
+      border-radius: 1em;
+      background-color: #fff;
 
-            &:hover {
-                color: $light-pink;
-                border: 1px solid $light-pink;
-                transition: $transition;
-            }
-        }
+      &:hover {
+        color: $light-pink;
+        border: 1px solid $light-pink;
+        transition: $transition;
+      }
     }
+  }
 }

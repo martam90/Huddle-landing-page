@@ -55,7 +55,7 @@ footer {
         display: none;
 
         &.active {
-          padding: 0;
+          padding: $spacing - 0.7 0;
           display: block;
           color: $light-red;
         }
@@ -74,7 +74,7 @@ footer {
       padding-top: $spacing * 4;
 
       .footer__logo {
-          fill: $pale-blue;
+        fill: $pale-blue;
       }
 
       .text--white {
