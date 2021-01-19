@@ -189,7 +189,7 @@ header .cta.cta--header:hover {
 
 .hero .hero__image {
   width: 100%;
-  padding: 5em 0;
+  padding: 2.5em 0;
   padding: 5em 0;
 }
 
@@ -198,7 +198,7 @@ main {
 }
 
 main > section {
-  padding: 6.25em 3.75em;
+  padding: 3.125em;
 }
 
 main .title--medium {
@@ -242,7 +242,7 @@ main .grow::after {
 
 main .grow .grow__image {
   width: 100%;
-  padding: 5em 0;
+  padding: 2.5em 0;
 }
 
 main .users {
@@ -282,12 +282,12 @@ main .users::after {
 
 main .users .users__image {
   width: 100%;
-  padding: 5em 0;
+  padding: 2.5em 0;
 }
 
 main .conversations .conversations__image {
   width: 100%;
-  padding: 5em 0;
+  padding: 2.5em 0;
 }
 
 main .community .community__title {
@@ -677,9 +677,9 @@ footer .attribution a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     gap: 1.875em;
   }
   footer .footer.footer--top .footer__input {
